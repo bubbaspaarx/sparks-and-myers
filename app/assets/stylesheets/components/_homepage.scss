@@ -14,7 +14,7 @@ h2 {
   padding: 50px 0px;
 }
 
-.olympian-content {
+.sparks-content {
   color: #3f3f3f;
   margin: 40px;
   p {
@@ -57,7 +57,7 @@ h2 {
   }
 }
 
-.olympian-logo {
+.sparks-logo {
   height: 25vmin;
 }
 
@@ -66,25 +66,6 @@ h2 {
     font-size: 2vmin;
   }
 }
-
-.stone {
-  height: 300px;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  &:hover .overlay {
-  transform: none;
-  }
-}
-
-.stone-companiy-wrapper {
-  background-color: #fff;
-  padding: 50px 0px;
-  h2 {
-    margin-bottom: 30px;
-  }
-}
-
 
 .span {
   position:absolute;
