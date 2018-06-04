@@ -1,0 +1,39 @@
+.slick-prev,
+.slick-next {
+  // left: 0px !important;
+  // right: 0px !important;
+  &:before {
+    font-size: 38px !important;
+    color: $brand-primary !important;
+  }
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.project-carousel {
+  width: 80%
+}
+
+
+.collapse[aria-expanded="true"] {
+    display: block !important;
+    overflow: hidden;
+}
+.collapse[aria-expanded="false"] {
+    display: block !important;
+    height: 0px;
+}

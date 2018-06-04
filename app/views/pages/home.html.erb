@@ -6,11 +6,13 @@
  <div class="container-fluid">
   <div class="row">
     <div class="about-title">
-      <h2>About Sparks & Myers</h2>
+      <h2 data-aos="flip-left" data-aos-duration="2000">About Sparks & Myers</h2>
     </div>
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      <div class="sparks-content text-center">
-       <p>Philip Sparks & Richard Myers are experts in all aspects of Golf Course architecture including, planning, risk mitigation, renovations and inert waste projects</p>
+      <div>
+        <div class="sparks-content text-center">
+         <p data-aos="flip-up" data-aos-duration="2000">Philip Sparks & Richard Myers are experts in all aspects of Golf Course architecture including, planning, risk mitigation, renovations and inert waste projects</p>
+       </div>
      </div>
    </div>
  </div>
@@ -24,24 +26,22 @@
 <%= render 'shared/projects' %>
 
 <div class="location-map">
-  <iframe class="gmap" id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.4989297382454!2d1.3870846157597048!3d51.22830557959024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deaec1fe49fed3%3A0x8b8ceb2121a575b2!2sOlympian+Stone!5e0!3m2!1sen!2suk!4v1521649694620" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe class="gmap" id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.6332956548213!2d1.391610815758282!3d51.18898137958408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deafd56a0a0761%3A0x407f79e1643825b3!2sSparks+%26+Myers!5e0!3m2!1sen!2suk!4v1527937818541" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <footer class="footer-wrapper">
   <div class="footer">
     <div class="address">
-      <li>Olympian Stone Ltd</li>
-      <li>Unit 8, Southwall Road</li>
-      <li>Southwall Industrial Estate,</li>
-      <li>Deal, Kent</li>
-      <li>CT14 9QB</li>
-      <li>Tel: 07555 238606</li>
+      <%= image_tag "sparksmyers_logo_large_white.png", height: 80, class: "white-logo" %>
+      <li>Sparks & Myers Ltd</li>
+      <li>Ventura</li>
+      <li>Claremont Road</li>
+      <li>Kingsdown, Kent</li>
+      <li>CT14 8BU</li>
+      <li>Tel: 07957 862635</li>
     </div>
     <div class="footer-links">
       <a href="https://www.facebook.com/olympianstoneltd/" target="_blank"><i class="fa fa-facebook"></i></a>
-    </div>
-    <div class="footer-copyright">
-      Site by Ed Sparks <i class="fa fa-heart"></i>
     </div>
   </div>
 </footer>

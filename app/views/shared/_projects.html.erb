@@ -1,38 +1,36 @@
-<div class="container-fluid">
+<div class="container-fluid" id="myGroup">
   <div class="row">
-    <div class="more-btn-div">
-      <button class="more-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Stoke Rochford Golf Club
-        <br>
-        <span class="dot">-</span>
-        <br>
-        12th hole, 139 yards/Par 3
-      </button>
-      <p></p>
+    <div class="more-buttons">
+      <div class="more-btn-div" id="projects">
+        <button class="more-button" data-aos="zoom-out-right" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-parent="#accordion">
+          Stoke Rochford Golf Club
+          <br>
+          <span class="dot">-</span>
+          <br>
+          12th hole, 139 yards/Par 3
+        </button>
+        <p></p>
+      </div>
+      <div class="more-btn-div">
+        <button class="more-button" data-aos="zoom-out-left" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+          Dummer & Dummer Golf Club
+          <br>
+          <span class="dot">-</span>
+          <br>
+          19th hole, 1 pint/Par 3
+        </button>
+        <p></p>
+      </div>
     </div>
-    <div class="more-btn-div">
-      <button class="more-button" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-        Stoke Rochford Golf Club
-        <br>
-        <span class="dot">-</span>
-        <br>
-        12th hole, 139 yards/Par 3
-      </button>
-      <p></p>
-    </div>
-    <div class="collapse" id="collapseExample" style="overflow: hidden;">
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
+    <div class="collapse" id="collapseExample" style="overflow: hidden;" aria-expanded="false">
+      <div class="project-container">
+        <div class="project-carousel">
           <div>
             <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
           <div>
             <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
           <div>
             <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
           </div>
@@ -41,24 +39,45 @@
     </div>
   </div>
   <div class="row">
-    <div class="collapse" id="collapseExample2" style="overflow: hidden;">
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
+    <div class="collapse" id="collapseExample2" style="overflow: hidden;" aria-expanded="false">
+      <div class="project-container">
+        <div class="project-carousel">
           <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
           <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
           <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<script>
+  const collapses = document.querySelectorAll('.collapse')
+  const moreButtons = document.querySelectorAll('.more-button')
+  moreButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      for(i = 0; i < collapses.length; i++) {
+        if(collapses[i].attributes["aria-expanded"].value === "true") {
+          if(i === 0) {
+            collapses[1].attributes["aria-expanded"].value = "false"
+          } else {
+            collapses[0].attributes["aria-expanded"].value = "false"
+          }
+        };
+      };
+      // collapses.forEach((collapse, index) => {
+      //   if(collapse.attributes["aria-expanded"].value === "true") {
+      //     collapse.
+      //   }
+      // })
+    })
+  })
+
+</script>

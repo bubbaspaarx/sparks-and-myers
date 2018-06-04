@@ -1,17 +1,17 @@
-<div id="banner3" class="second-banner">
+<div id="home" class="second-banner">
   <%= render 'shared/navbar' %>
   <div id="carousel-example-generic" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
     <div class="banner-content">
-      <%= image_tag "sparksmyers_logo_large_white.png", class: "sparks-logo" %>
+      <%= image_tag "sparksmyers_logo_large_white.png", class: "sparks-logo", "data-aos" => "zoom-out", "data-aos-duration" => "3000" %>
       <p>Experts in Golf Course Architecture</p>
       <a class="call-button" href="tel:07957862635">
        Call us<span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>07957 862635</a>
      </div>
      <!-- Wrapper for slides -->
      <div class="carousel-inner" role="listbox">
-      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/q_auto/v1526637953/Sparks%20-Myers/tee.jpg" %>');">
+      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1527768850/Sparks%20-Myers/course.jpg" %>');">
       </div>
-      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/q_auto/v1526637954/Sparks%20-Myers/spray.jpg" %>');">
+      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1527769110/Sparks%20-Myers/fairways-greens-1434869.jpg" %>');">
       </div>
       <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/q_auto/v1526637953/Sparks%20-Myers/sunset.jpg" %>');">
       </div>
@@ -25,4 +25,3 @@
     </a>
   </div>
 </div>
-
