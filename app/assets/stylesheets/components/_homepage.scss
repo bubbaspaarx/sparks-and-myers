@@ -30,16 +30,20 @@ h2 {
 
 
 .more-button {
-  color: $brand-primary;
+  color: #fff;
   padding: 5px 20px;
-  border: 1px solid $brand-primary;
-  background-color: transparent;
+  background-color: #eebd4ad1;
   margin-bottom: 51px;
+  border-radius: 4px;
+  border: 1px solid #fff;
   &:hover {
     cursor: pointer;
-    background-color: #eebd4952;
+    background-color: $brand-primary;
     color: #fff;
-    border: 1px #fff;
+  }
+  &:focus {
+    outline: 5px auto #f7ff76;
+    outline-offset: -2px;
   }
 }
 

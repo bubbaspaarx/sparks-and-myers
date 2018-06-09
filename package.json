@@ -5,6 +5,7 @@
     "@rails/webpacker": "^3.3.1",
     "aos": "^2.3.0",
     "bootstrap": "3",
+    "hoek": "^5.0.3",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1"
   },
