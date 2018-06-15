@@ -1,54 +1,58 @@
-<div class="container-fluid" id="myGroup" style="background-image: linear-gradient(rgba(250,250,250,0.9), rgba(250,250,250,0.9)), url(http://res.cloudinary.com/montycat/image/upload/v1528537737/Screen_Shot_2018-06-09_at_10.48.06.png)">
-  <div class="row">
-    <div class="more-buttons">
-      <div class="more-btn-div" id="projects">
-        <button class="more-button" data-aos="zoom-out-right" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-parent="#accordion">
-          Stoke Rochford Golf Club
-        </button>
-        <p></p>
+<div id="projects" class="project-wrapper description-wrapper" style="background-image: linear-gradient(rgba(250,250,250,0.9), rgba(250,250,250,0.9)), url(http://res.cloudinary.com/montycat/image/upload/v1528537737/Screen_Shot_2018-06-09_at_10.48.06.png)">
+  <div class="container-fluid" id="myGroup">
+    <div class="row">
+     <div class="about-title">
+        <h2>Our Projects</h2>
+     </div>
+      <div class="more-buttons">
+        <div class="more-btn-div">
+          <button class="more-button" data-aos="zoom-out-right" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-parent="#accordion">
+            Stoke Rochford Golf Club
+          </button>
+          <p></p>
+        </div>
+        <div class="more-btn-div">
+          <button class="more-button" data-aos="zoom-out-left" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            Dummer & Dummer Golf Club
+          </button>
+          <p></p>
+        </div>
       </div>
-      <div class="more-btn-div">
-        <button class="more-button" data-aos="zoom-out-left" data-aos-duration="3000" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-          Dummer & Dummer Golf Club
-        </button>
-        <p></p>
-      </div>
-    </div>
-    <div class="collapse" id="collapseExample" style="overflow: hidden;" aria-expanded="false">
-      <div class="project-container">
-        <div class="project-carousel">
-          <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
-          </div>
-          <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
-          </div>
-          <div>
-            <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+      <div class="collapse" id="collapseExample" style="overflow: hidden;" aria-expanded="false">
+        <div class="project-container">
+          <div class="project-carousel">
+            <div>
+              <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            </div>
+            <div>
+              <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            </div>
+            <div>
+              <%= cl_image_tag("Sparks -Myers/12th-act.jpg", class: "project-photos") %>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="collapse" id="collapseExample2" style="overflow: hidden;" aria-expanded="false">
-      <div class="project-container">
-        <div class="project-carousel">
-          <div>
-            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
-          </div>
-          <div>
-            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
-          </div>
-          <div>
-            <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
+    <div class="row">
+      <div class="collapse" id="collapseExample2" style="overflow: hidden;" aria-expanded="false">
+        <div class="project-container">
+          <div class="project-carousel">
+            <div>
+              <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
+            </div>
+            <div>
+              <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
+            </div>
+            <div>
+              <%= cl_image_tag("Sparks -Myers/17-act.jpg", class: "project-photos") %>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <script>
   const collapses = document.querySelectorAll('.collapse')

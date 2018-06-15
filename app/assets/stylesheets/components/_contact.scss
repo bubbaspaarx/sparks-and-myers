@@ -1,0 +1,27 @@
+.contact-wrapper {
+  background-color: #2E4057;
+}
+
+.contact-form {
+  margin-bottom: 50px;
+}
+
+.form-control.text {
+  height: 93px;
+}
+
+.d-flex.flex-row.justify-content-between.align-items-center {
+  display: inline-flex;
+}
+
+.send-button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid $brand-primary;
+  color: $brand-primary;
+  transition: background-color ease 0.5s;
+  &:hover {
+    background-color: $brand-primary;
+    color: #2E4057;
+  }
+}
