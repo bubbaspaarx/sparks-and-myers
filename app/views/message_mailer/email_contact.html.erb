@@ -1,5 +1,16 @@
-<h1>Message#contact</h1>
+<h2>Sparks and Myers website enquiry</h2>
+<p>Hi <%= @message.name %>, thank you for your enquiry. We will endeavour to get back to you as soon as possible.</p>
 
-<p>
-  <%= @greeting %>, find me in app/views/message_mailer/contact.html.erb
-</p>
+<p>Your message</p>
+<ul>
+  <li>Name: <%= @message.name %></li>
+  <li>Email: <%= @message.email %></li>
+  <li>Number: <%= @message.phone_number %></li>
+  <li>Message: <%= @message.body %></li>
+</ul>
+
+<p>Thank you!</p>
+<br>
+<p>Kind regards</p>
+<br>
+<p>Sparks & Myers</p>

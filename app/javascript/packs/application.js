@@ -12,3 +12,4 @@ initUpdateNavbarOnScroll();
 
 import '../components/slick';
 import '../components/projects';
+import '../components/alert'
