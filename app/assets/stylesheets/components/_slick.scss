@@ -1,7 +1,9 @@
-.slick-prev,
+.slick-prev {
+  left: -75px !important;
+}
 .slick-next {
-  // left: 0px !important;
-  // right: 0px !important;
+
+  right: -75px !important;
   &:before {
     font-size: 38px !important;
     color: $brand-primary !important;
@@ -10,11 +12,11 @@
 
 /* the slides */
 .slick-slide {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 /* the parent */
 .slick-list {
-    margin: 0 -10px;
+  margin: 0 -10px;
 }
 
 .project-container {
@@ -30,10 +32,10 @@
 
 
 .collapse[aria-expanded="true"] {
-    display: block !important;
-    overflow: hidden;
+  display: block !important;
+  overflow: hidden;
 }
 .collapse[aria-expanded="false"] {
-    display: block !important;
-    height: 0px;
+  display: block !important;
+  height: 0px;
 }
