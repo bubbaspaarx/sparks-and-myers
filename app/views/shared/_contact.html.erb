@@ -14,7 +14,7 @@
         <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-        <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Event Info", required: true, input_html: { value: "I am enquiring about your architecture services" } %>
+        <%= f.input :body, required: true, label: false, as: :text,  placeholder: "Event Info", required: true, input_html: { value: "I am enquiring about your architecture services" } %>
         <%= f.button :submit, "Send", class: 'send-button' %>
         <% end %>
       </div>
