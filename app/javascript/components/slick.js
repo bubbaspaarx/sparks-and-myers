@@ -8,10 +8,6 @@ $(".project-carousel").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
         arrows: false
       }
     }
@@ -32,10 +28,6 @@ $(".testimonial-carousel").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
         arrows: false
       }
     }
