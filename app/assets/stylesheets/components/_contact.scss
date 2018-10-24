@@ -25,3 +25,9 @@
     color: #2E4057;
   }
 }
+
+.g-recaptcha {
+  transition: visibility 0s, opacity 2s ease-out;
+  visibility: visible;
+  opacity: 1;
+}

@@ -13,3 +13,5 @@ initUpdateNavbarOnScroll();
 import '../components/slick';
 import '../components/projects';
 import '../components/alert'
+import { enableBtn } from '../components/recaptcha';
+window.enableBtn = enableBtn
